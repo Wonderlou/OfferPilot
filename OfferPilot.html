@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OfferPilot AI 求职助理</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar">
+          <div class="brand">
+            <span class="brand-mark">OP</span>
+            <div>
+              <p>OfferPilot</p>
+              <span>AI 自动求职工作台</span>
+            </div>
+          </div>
+          <div class="topbar-links">
+            <a href="#profile-hub">候选人画像</a>
+            <a href="#job-engine">自动投递</a>
+            <a href="#dashboard">投递看板</a>
+          </div>
+        </nav>
+
+        <section class="hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">面向求职者的 AI 自动投递网站 Demo</span>
+            <h1>把简历资料、岗位搜索、自动投递和进度追踪，放进一个统一入口。</h1>
+            <p class="hero-text">
+              这个 demo 聚焦你提出的三个核心模块: 模块化录入个人经历、聚合第三方岗位并自动投递、以及生成投递进度看板。
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#profile-hub">查看核心模块</a>
+              <a class="btn btn-secondary" href="#dashboard">看投递看板</a>
+            </div>
+
+            <div class="hero-stats">
+              <article>
+                <strong>1,284</strong>
+                <span>今日同步岗位</span>
+              </article>
+              <article>
+                <strong>86%</strong>
+                <span>匹配度筛选命中率</span>
+              </article>
+              <article>
+                <strong>42</strong>
+                <span>本周自动投递</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-panel">
+            <div class="panel-card spotlight">
+              <div class="panel-head">
+                <span>AI 求职代理</span>
+                <span class="status live">运行中</span>
+              </div>
+              <ul class="signal-list">
+                <li>
+                  <span>候选人画像完整度</span>
+                  <strong>93%</strong>
+                </li>
+                <li>
+                  <span>抓取平台</span>
+                  <strong>Boss / 智联 / 猎聘 / 拉勾</strong>
+                </li>
+                <li>
+                  <span>今日待投递推荐</span>
+                  <strong>18 个</strong>
+                </li>
+              </ul>
+            </div>
+
+            <div class="panel-row">
+              <div class="panel-card mini">
+                <p>简历版本</p>
+                <strong>产品经理 / 数据分析 / AI 产品</strong>
+              </div>
+              <div class="panel-card mini">
+                <p>自动化状态</p>
+                <strong>每 2 小时刷新岗位池</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="section" id="profile-hub">
+          <div class="section-heading">
+            <span class="eyebrow">模块一</span>
+            <h2>候选人信息模块化录入</h2>
+            <p>
+              把学历、实习、项目、工作经历拆成结构化信息，便于 AI 自动生成不同岗位版本的简历与投递文案。
+            </p>
+          </div>
+
+          <div class="profile-grid">
+            <article class="info-card">
+              <div class="card-head">
+                <h3>个人资料仓库</h3>
+                <span class="tag">结构化</span>
+              </div>
+              <div class="chip-list">
+                <span>基础信息</span>
+                <span>教育经历</span>
+                <span>实习经历</span>
+                <span>项目经历</span>
+                <span>工作经历</span>
+                <span>技能证书</span>
+                <span>作品集</span>
+                <span>求职偏好</span>
+              </div>
+              <div class="timeline">
+                <div>
+                  <strong>浙江大学 · 硕士</strong>
+                  <span>计算机相关方向 · 2023 - 2026</span>
+                </div>
+                <div>
+                  <strong>AI 产品实习</strong>
+                  <span>参与智能求职助手、用户增长与数据分析项目</span>
+                </div>
+                <div>
+                  <strong>项目沉淀</strong>
+                  <span>将成果拆成 STAR 描述，供 AI 生成定制化简历</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="info-card form-card">
+              <div class="card-head">
+                <h3>演示录入表单</h3>
+                <span class="tag">Demo</span>
+              </div>
+              <div class="form-grid">
+                <label>
+                  目标岗位
+                  <input value="AI 产品经理" readonly />
+                </label>
+                <label>
+                  目标城市
+                  <input value="上海 / 杭州 / 深圳" readonly />
+                </label>
+                <label class="full">
+                  核心技能
+                  <textarea readonly>用户研究、数据分析、AIGC 产品设计、PRD、Prompt 设计、项目管理</textarea>
+                </label>
+                <label class="full">
+                  项目亮点
+                  <textarea readonly>负责智能求职助手产品方案设计，搭建岗位匹配和自动投递流程，提升职位筛选效率与简历定制质量。</textarea>
+                </label>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="job-engine">
+          <div class="section-heading">
+            <span class="eyebrow">模块二</span>
+            <h2>聚合岗位并自动投递</h2>
+            <p>
+              从第三方招聘平台拉取岗位，AI 根据职位 JD、行业、薪资、城市和匹配度自动筛选，然后生成定制简历与沟通话术。
+            </p>
+          </div>
+
+          <div class="automation-layout">
+            <article class="flow-card">
+              <div class="flow-step">
+                <span>01</span>
+                <div>
+                  <strong>抓取岗位池</strong>
+                  <p>定时同步 Boss、智联、猎聘、拉勾等平台的最新职位。</p>
+                </div>
+              </div>
+              <div class="flow-step">
+                <span>02</span>
+                <div>
+                  <strong>AI 匹配评分</strong>
+                  <p>按学历、项目关键词、经验年限、行业偏好与通勤半径排序。</p>
+                </div>
+              </div>
+              <div class="flow-step">
+                <span>03</span>
+                <div>
+                  <strong>自动生成材料</strong>
+                  <p>自动选择简历版本，生成自我介绍、附件说明与岗位定制要点。</p>
+                </div>
+              </div>
+              <div class="flow-step">
+                <span>04</span>
+                <div>
+                  <strong>自动投递并记录</strong>
+                  <p>完成投递动作后回写状态，进入看板持续追踪。</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="jobs-card">
+              <div class="card-head">
+                <h3>推荐岗位池</h3>
+                <span class="tag accent">实时同步</span>
+              </div>
+              <div class="job-list" id="job-list"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="dashboard">
+          <div class="section-heading">
+            <span class="eyebrow">模块三</span>
+            <h2>投递进度看板与行业分布</h2>
+            <p>
+              在同一个看板里追踪“已投递到哪家公司、属于什么行业、目前进度如何、下一步要做什么”。
+            </p>
+          </div>
+
+          <div class="dashboard-top">
+            <article class="metric-card">
+              <span>已投递公司</span>
+              <strong>27 家</strong>
+              <p>其中 11 家进入沟通或面试阶段</p>
+            </article>
+            <article class="metric-card">
+              <span>行业分布</span>
+              <strong>AI / 企业服务 / 电商 / 金融科技</strong>
+              <p>当前以 AI 与企业服务岗位为主</p>
+            </article>
+            <article class="metric-card">
+              <span>本周重点</span>
+              <strong>跟进 5 家高匹配公司</strong>
+              <p>系统会自动提醒补充材料与预约面试</p>
+            </article>
+          </div>
+
+          <div class="board-layout">
+            <article class="board-card">
+              <div class="card-head">
+                <h3>行业分布</h3>
+                <span class="tag">数据概览</span>
+              </div>
+              <div class="distribution-list" id="industry-list"></div>
+            </article>
+
+            <article class="board-card wide">
+              <div class="card-head">
+                <h3>投递进度看板</h3>
+                <span class="tag">自动更新</span>
+              </div>
+              <div class="kanban" id="kanban-board"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section closing">
+          <div class="closing-card">
+            <div>
+              <span class="eyebrow">Demo 目标</span>
+              <h2>先把产品结构跑通，再逐步接入真实简历、真实岗位抓取和自动化投递能力。</h2>
+            </div>
+            <div class="closing-points">
+              <p>这个 demo 目前是网页原型，适合用于产品展示、需求讨论和下一步开发拆解。</p>
+              <p>如果你愿意，我下一步可以继续帮你把它升级成可交互的 React 产品，加入登录、表单提交、岗位详情页和真实后台接口结构。</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+  </html>
